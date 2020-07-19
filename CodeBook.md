@@ -1,6 +1,6 @@
 # Codebook
 Mean and Standard Deviation are normalized and bounded within [-1,1].
-## Data-specific Information for: tidydata.csv 
+## Data-specific Information for: tidydata.txt
 |Position|Variable|Label|Type|Values|
 |--|------|--------|--------|-----|
 1|timebodyaccelerationxmean|Mean of X-Body Acceleration in Time domain|Numeric|[-1,1]
@@ -72,7 +72,7 @@ Mean and Standard Deviation are normalized and bounded within [-1,1].
 67|subject|Subject's ID|Numeric|[1,30]
 68|activity|Activities performed by the Subjects|String|["WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"]
 
-## Data-specific Information for: tidydatameans.csv
+## Data-specific Information for: tidydatameans.txt
 
 The values of the variables from position 3 until the end are the mean per subject and activity of each variable.
 
