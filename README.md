@@ -20,7 +20,21 @@ tidydatameans.csv|Second tidy Dataset obtained from tidydata.csv by grouping sub
 ## Instruction List
 
 1. Merges the training and the test sets to create one data set.
+
+> I use `read.table`  to load the raw data, then `cbind` to merge the train and test columns and finally `rbind` to merge the 2 datasets. 
+
 2. Extracts only the measurements on the mean and standard deviation for each measurement.
+
+> I use `grepl` to filter the columns with mean and std.
+
 3. Uses descriptive activity names to name the activities in the data set
+
+> First, I load the activity names with `read.table` and finally, `merge` to inner join the activity names with the dataset.
+
 4. Appropriately labels the data set with descriptive variable names.
+
+> I use `gsub`,`tolower` and `sub` to set the appropriate labels following the rules showed in class.
+
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+> I use pipes and the functions `group_by` and `summarise_at` in order to get the second tidy dataset.
