@@ -14,8 +14,8 @@ README.md|Documentation explaining the project and how to use files contained in
 UCI HAR Dataset/| File where is the raw data and its own Codebook
 CodeBook.md|Codebook where is detailed the features inside tidydata.csv and tidydatameans.csv
 run_analysis.R|R Script where is processed the raw data to obtained the tidy data following the Instruction List.
-tidydata.csv|Obtained tidy Dataset
-tidydatameans.csv|Second tidy Dataset obtained from tidydata.csv by grouping subjects and activities
+tidydata.txt|Obtained tidy Dataset
+tidydatameans.txt|Second tidy Dataset obtained from tidydata.csv by grouping subjects and activities
 
 ## Instruction List
 
