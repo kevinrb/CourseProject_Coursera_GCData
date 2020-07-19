@@ -1,4 +1,5 @@
 # Codebook
+Mean and Standard Deviation are normalized and bounded within [-1,1].
 ## Data-specific Information for: tidydata.csv 
 |Position|Variable|Label|Type|Values|
 |--|------|--------|--------|-----|
