@@ -107,5 +107,5 @@ group<-datam %>% group_by(subject,activity) %>%
 ## Finally, we create the tidy datasets
 ############################################
 
-write.csv(datam,"tidydata.csv",row.names=FALSE)
-write.csv(group,"tidydatameans.csv",row.names=FALSE)
+write.csv(datam,"tidydata.txt",row.names=FALSE)
+write.csv(group,"tidydatameans.txt",row.names=FALSE)
