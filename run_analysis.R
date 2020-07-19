@@ -82,13 +82,13 @@ names(datam)<-sub("acc","acceleration",names(datam))
 ### Changing mag to length in order to avoid abbreviation
 names(datam)<-sub("mag","length",names(datam))
 ### Changing places of mean and directions XYZ
-names(datam)<-sub(".meanx$","xmean",names(datam))
-names(datam)<-sub(".meany$","ymean",names(datam))
-names(datam)<-sub(".meanz$","zmean",names(datam))
+names(datam)<-sub("meanx$","xmean",names(datam))
+names(datam)<-sub("meany$","ymean",names(datam))
+names(datam)<-sub("meanz$","zmean",names(datam))
 ### Changing places of std and directions XYZ
-names(datam)<-sub(".stdx$","xstd",names(datam))
-names(datam)<-sub(".stdy$","ystd",names(datam))
-names(datam)<-sub(".stdz$","zstd",names(datam))
+names(datam)<-sub("stdx$","xstd",names(datam))
+names(datam)<-sub("stdy$","ystd",names(datam))
+names(datam)<-sub("stdz$","zstd",names(datam))
 
 ############################################
 ## Step 5: From the data set in step 4, creates a second, independent
@@ -100,7 +100,7 @@ names(datam)<-sub(".stdz$","zstd",names(datam))
 library("dplyr")
 ### Using pipes, first, group by subject, activity and then  summarise with mean function at all the variables
 group<-datam %>% group_by(subject,activity) %>%
-  summarise_at(vars(timebodyacceleratioxmean:frequencyangularvelocityjerklengthstd),
+  summarise_at(vars(timebodyaccelerationxmean:frequencyangularvelocityjerklengthstd),
                mean)
 
 ############################################
